@@ -1,0 +1,53 @@
+.repel {
+  position: fixed;
+  z-index: 9999;
+
+  /* Pill shape for text */
+  min-width: 100px;
+  padding: 12px 30px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: white;
+  cursor: pointer;
+
+  /* Romantic Gradient */
+  background: linear-gradient(135deg, #ff7eb3 0%, #ff758c 100%);
+  box-shadow:
+    0 10px 20px rgba(255, 117, 140, 0.4),
+    0 4px 8px rgba(255, 117, 140, 0.2),
+    inset 0 2px 4px rgba(255, 255, 255, 0.4);
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  user-select: none;
+  touch-action: none;
+
+  /* Smooth movement */
+  transition: transform 0.1s ease, box-shadow 0.2s ease, background 0.2s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.repel:hover {
+  box-shadow:
+    0 15px 30px rgba(255, 117, 140, 0.6),
+    0 0 15px rgba(255, 255, 255, 0.6);
+  background: linear-gradient(135deg, #ff8ebf 0%, #ff869a 100%);
+  transform: scale(1.05);
+}
+
+.repel:active {
+  transform: scale(0.95);
+  filter: brightness(0.95);
+}
+
+/* Optional sparkle pseudo-element or similar can be added here if desired, 
+     but keeping it simple with shadows/gradients for now effectively creates the "glow" */
