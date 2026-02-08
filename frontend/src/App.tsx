@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import RepelButton from './RepellButton/RepelButton'
 import styles from './App.module.css'
-import ss from "./assets/ss.png";
+import ss from "./assets/flower-cat.png"
 
 function App() {
   const [accepted, setAccepted] = useState(false)
@@ -36,7 +36,7 @@ function App() {
       <div className={styles.bgHeart}>💕</div>
       <div className={styles.bgHeart}>💘</div>
       <div className={styles.bgHeart}>🌸</div>
-      
+
 
 
       <div className={styles.card}>
@@ -61,7 +61,7 @@ function App() {
           </>
         ) : (
           <div className={styles.successContainer}>
-            <div className={styles.heartEmoji}>💘</div>
+            <div className={styles.heartEmoji}><img src={ss} alt="My Valentine" /></div>
             <h1 className={styles.title}>;D YAYYYY MWWAAH</h1>
             <p className={styles.subtext} style={{ fontSize: '1.5rem', color: '#a61e4d' }}>
               Even tho we cant meet together this year, I still love you my baby :)
