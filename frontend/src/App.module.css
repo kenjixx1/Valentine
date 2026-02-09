@@ -17,7 +17,7 @@
 .bgHeart {
     position: absolute;
     color: #fff;
-    opacity: 0.5;
+    opacity: 0.7;
     animation: floatHeart 15s infinite linear;
     user-select: none;
     pointer-events: none;
@@ -60,10 +60,10 @@
 }
 
 .floatingImg {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -221,7 +221,7 @@
 .dateDetails {
     margin-top: 2rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 225, 225, 0.6);
     border-radius: 12px;
     color: #862e9c;
 }

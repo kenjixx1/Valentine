@@ -2,6 +2,13 @@ import { useState, useRef, useEffect } from 'react'
 import RepelButton from './RepellButton/RepelButton'
 import styles from './App.module.css'
 import ss from "./assets/flower-cat.png"
+import cat1 from "./assets/cat1.png"
+import cat2 from "./assets/cat2.png"
+import cat3 from "./assets/cat3.png"
+import cat4 from "./assets/cat4.png"
+import cat5 from "./assets/cat5.jpg"
+import ticket from "./assets/ticket.png"
+
 
 function App() {
   const [accepted, setAccepted] = useState(false)
@@ -30,12 +37,12 @@ function App() {
     <div className={styles.container}>
       {/* Background Hearts */}
       <div className={styles.bgHeart}>
-        <img src={ss} alt="My Valentine" className={styles.floatingImg} />
+        <img src={cat5} alt="My Valentine" className={styles.floatingImg} />
       </div>
-      <div className={styles.bgHeart}>💖</div>
-      <div className={styles.bgHeart}>💕</div>
-      <div className={styles.bgHeart}>💘</div>
-      <div className={styles.bgHeart}>🌸</div>
+      <div className={styles.bgHeart}><img src={cat1} alt="My Valentine" className={styles.floatingImg} /></div>
+      <div className={styles.bgHeart}><img src={cat2} alt="My Valentine" className={styles.floatingImg} /></div>
+      <div className={styles.bgHeart}><img src={cat3} alt="My Valentine" className={styles.floatingImg} /></div>
+      <div className={styles.bgHeart}><img src={cat4} alt="My Valentine" className={styles.floatingImg} /></div>
 
 
 
@@ -67,8 +74,9 @@ function App() {
               Even tho we cant meet together this year, I still love you my baby :)
             </p>
 
+
             <div className={styles.dateDetails}>
-              <p>Ticket</p>
+              <img src={ticket} alt="My Valentine" style={{ width: '500px' }} />
             </div>
           </div>
         )}
