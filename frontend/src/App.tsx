@@ -33,6 +33,8 @@ function App() {
   }
 
   const handleNoClick = () => {
+    const playBanging = new Audio(banging)
+    playBanging.play()
     alert("ARE YOU SURE YOU WILL NEVER TOUCH MY MUSCLE AGAIN")
   }
 
