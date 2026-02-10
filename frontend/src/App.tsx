@@ -7,7 +7,7 @@ import cat2 from "./assets/cat2.png"
 import cat3 from "./assets/cat3.png"
 import cat4 from "./assets/cat4.png"
 import cat5 from "./assets/cat5.jpg"
-import ticket from "./assets/ticket.png"
+import ticket from "./assets/ticketpic.png"
 
 //Updated
 
