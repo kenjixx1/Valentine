@@ -8,6 +8,8 @@ import cat3 from "./assets/cat3.png"
 import cat4 from "./assets/cat4.png"
 import cat5 from "./assets/cat5.jpg"
 import ticket from "./assets/ticketpic.png"
+import clicksound from "./assets/Happy.mp3"
+import banging from "./assets/Babging.mp3"
 
 //Updated
 
@@ -20,7 +22,14 @@ function App() {
   const noPlaceholderRef = useRef<HTMLDivElement>(null)
 
   const handleYes = () => {
+
     setAccepted(true)
+    const playBanging = new Audio(banging)
+    playBanging.play()
+    const playSound = new Audio(clicksound)
+    playSound.play()
+    
+
   }
 
   const handleNoClick = () => {
